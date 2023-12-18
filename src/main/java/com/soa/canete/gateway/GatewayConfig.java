@@ -36,6 +36,9 @@ public class GatewayConfig {
                 .route((r) -> r.path("/api/transferTeen/**")
                         .uri("http://localhost:8086"))
 
+                .route((r) -> r.path("/getData")
+                        .uri("http://localhost:8087"))
+
                 .route((r) -> r.path("/api/transaccionalData/**")
                         .uri("http://localhost:8088"))
 
